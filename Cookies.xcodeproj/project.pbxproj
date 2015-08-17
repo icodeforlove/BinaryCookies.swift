@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CC4264CF1B80EFCA0074E254 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4264CE1B80EFCA0074E254 /* main.swift */; };
+		CC4264E21B8227BF0074E254 /* CookiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4264E11B8227BF0074E254 /* CookiesTest.swift */; };
+		CC4264FE1B82309B0074E254 /* BinaryCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4264FD1B82309B0074E254 /* BinaryCookies.swift */; };
+		CC4264FF1B82309B0074E254 /* BinaryCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4264FD1B82309B0074E254 /* BinaryCookies.swift */; };
+		CC4265011B8230CD0074E254 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC4265001B8230CD0074E254 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,21 @@
 /* Begin PBXFileReference section */
 		CC4264CB1B80EFCA0074E254 /* Cookies */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cookies; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4264CE1B80EFCA0074E254 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CC4264DF1B8227BF0074E254 /* CookiesTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookiesTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4264E11B8227BF0074E254 /* CookiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookiesTest.swift; sourceTree = "<group>"; };
+		CC4264FD1B82309B0074E254 /* BinaryCookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCookies.swift; sourceTree = "<group>"; };
+		CC4265001B8230CD0074E254 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC4264C81B80EFCA0074E254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4264DC1B8227BF0074E254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4264CD1B80EFCA0074E254 /* Cookies */,
+				CC4264E01B8227BF0074E254 /* CookiesTest */,
 				CC4264CC1B80EFCA0074E254 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4264CB1B80EFCA0074E254 /* Cookies */,
+				CC4264DF1B8227BF0074E254 /* CookiesTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,18 @@
 			isa = PBXGroup;
 			children = (
 				CC4264CE1B80EFCA0074E254 /* main.swift */,
+				CC4264FD1B82309B0074E254 /* BinaryCookies.swift */,
 			);
 			path = Cookies;
+			sourceTree = "<group>";
+		};
+		CC4264E01B8227BF0074E254 /* CookiesTest */ = {
+			isa = PBXGroup;
+			children = (
+				CC4264E11B8227BF0074E254 /* CookiesTest.swift */,
+				CC4265001B8230CD0074E254 /* Info.plist */,
+			);
+			path = CookiesTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +109,23 @@
 			productReference = CC4264CB1B80EFCA0074E254 /* Cookies */;
 			productType = "com.apple.product-type.tool";
 		};
+		CC4264DE1B8227BF0074E254 /* CookiesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4264E41B8227BF0074E254 /* Build configuration list for PBXNativeTarget "CookiesTest" */;
+			buildPhases = (
+				CC4264DB1B8227BF0074E254 /* Sources */,
+				CC4264DC1B8227BF0074E254 /* Frameworks */,
+				CC4264DD1B8227BF0074E254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookiesTest;
+			productName = CookiesTest;
+			productReference = CC4264DF1B8227BF0074E254 /* CookiesTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +136,9 @@
 				ORGANIZATIONNAME = "Chad Scira";
 				TargetAttributes = {
 					CC4264CA1B80EFCA0074E254 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CC4264DE1B8227BF0074E254 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -109,16 +156,38 @@
 			projectRoot = "";
 			targets = (
 				CC4264CA1B80EFCA0074E254 /* Cookies */,
+				CC4264DE1B8227BF0074E254 /* CookiesTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC4264DD1B8227BF0074E254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4265011B8230CD0074E254 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC4264C71B80EFCA0074E254 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4264FE1B82309B0074E254 /* BinaryCookies.swift in Sources */,
 				CC4264CF1B80EFCA0074E254 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4264DB1B8227BF0074E254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4264FF1B82309B0074E254 /* BinaryCookies.swift in Sources */,
+				CC4264E21B8227BF0074E254 /* CookiesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +286,28 @@
 			};
 			name = Release;
 		};
+		CC4264E51B8227BF0074E254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CookiesTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chadscira.CookiesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC4264E61B8227BF0074E254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CookiesTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chadscira.CookiesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -234,6 +325,15 @@
 			buildConfigurations = (
 				CC4264D31B80EFCA0074E254 /* Debug */,
 				CC4264D41B80EFCA0074E254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4264E41B8227BF0074E254 /* Build configuration list for PBXNativeTarget "CookiesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4264E51B8227BF0074E254 /* Debug */,
+				CC4264E61B8227BF0074E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

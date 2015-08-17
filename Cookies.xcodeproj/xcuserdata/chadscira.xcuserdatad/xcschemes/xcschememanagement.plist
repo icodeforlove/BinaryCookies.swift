@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CookiesTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>CC4264CA1B80EFCA0074E254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC4264DE1B8227BF0074E254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
